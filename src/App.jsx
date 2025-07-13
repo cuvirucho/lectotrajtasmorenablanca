@@ -162,13 +162,13 @@ const [premiosDisponibles, setPremiosDisponibles] = useState([]);
         <section className='hderd'>
           <img
             className='logodellocal'
-            src="https://res.cloudinary.com/db8e98ggo/image/upload/v1752169496/459036700_122101501928513503_3142647657257802548_n_thnzj7.jpg"
-            alt="Logo"
+          src="https://res.cloudinary.com/db8e98ggo/image/upload/v1752425938/Dise%C3%B1o_sin_t%C3%ADtulo_1_kutm4q.png"
           />
         </section>
 
         {cliente ? (
           <div className='CONTESCANERdatosfull'>
+           <p className='CLITTILU'   >Datos del cliente</p>
             <div className='datos'>
               <p><strong>Nombre</strong> {cliente.nombre}</p>
               <p><strong>Teléfono</strong> {cliente.telefono}</p>
@@ -218,7 +218,25 @@ const [premiosDisponibles, setPremiosDisponibles] = useState([]);
           
 
 
-           <button
+   
+
+
+
+
+     <div className='instruciones'  >
+
+<h2>Instruciones</h2>
+<p>1. Escanea el código QR del cliente.</p>
+<p>2. Verifica los puntos y premios disponibles.</p>
+<p>3. Agrega puntos si es necesario.</p>
+<p>4. Reclama premios según los puntos del cliente.</p>
+<p>5. Puedes escanear otro cliente en cualquier momento.</p>
+          </div>
+
+
+
+
+        <button
            className='btscaneartor'  
               onClick={() => {
                 setCliente(null);
@@ -229,6 +247,7 @@ const [premiosDisponibles, setPremiosDisponibles] = useState([]);
               >
               Escanear otro
             </button>
+
 
               </section>
           
@@ -241,13 +260,28 @@ const [premiosDisponibles, setPremiosDisponibles] = useState([]);
           <div className='CONTESCANER'>
             <h2 className='tulodescnar' >Escanea el QR del cliente</h2>
             <QrScanner activo={escaneando} onScan={onScan} />
+          
+          
+
+     <div className='instrucionef'  >
+
+<h2>Instruciones</h2>
+<p>1. Escanea el código QR del cliente.</p>
+<p>2. Verifica los puntos y premios disponibles.</p>
+<p>3. Agrega puntos si es necesario.</p>
+<p>4. Reclama premios según los puntos del cliente.</p>
+<p>5. Puedes escanear otro cliente en cualquier momento.</p>
+          </div>
+
+          
+          
           </div>
         )}
 
         {mensaje && <p style={{ marginTop: 100 }}>{mensaje}</p>}
       
 
-          
+     
       
       </article>
     </>

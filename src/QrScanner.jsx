@@ -38,7 +38,7 @@ function QrScanner({ onScan, activo }) {
         }
 
         await html5QrCode.start(
-          backCamera.id,
+        { facingMode: "environment" },
           { fps: 10, qrbox: 250 },
           async (decodedText) => {
             onScan(decodedText);

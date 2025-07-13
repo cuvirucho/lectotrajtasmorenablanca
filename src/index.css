@@ -6,10 +6,15 @@
 
 
 :root {
-  --color-primario: #000000;
-  --color-secundario: #ffffff;
-  --color-texto: #333;
+  --color-primario: #f8eed6;
+  --color-secundario: #090c02;
+  --color-tersero: #8b4513;
+  --color-cuarto: #913028;
+  --color-quinto: #99b189;
+  --color-sexyo: #b66e5b;
+
 }
+
 .hderd{
   background-color:var(--color-primario);
   width: 100%;
@@ -21,8 +26,8 @@
   height: 40px;
 }
 .logodellocal{
-  background-color: rgba(0, 0, 0, 0.986);
-width:25%;
+
+width:55%;
 object-fit: scale-down;
 border-radius: 10px;
 }
@@ -55,18 +60,29 @@ height: 100vh;
 }
 /*pondor de puntos*/
 .CONTESCANERdatosfull{
-  background-color: rgba(255, 0, 0, 0);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 50%;
+  text-align: center;
+  border-radius: 0px, 0px ,100px ,10px;
 }
 .datos{
   background-color: rgba(139, 238, 9, 0);
 display: flex;
 font-size: clamp(1.5rem, 2vw, 1.5rem);
 text-align: center;
-color: var(--color-primario);
+color: var(--color-secundario);
+justify-content: space-around;
 
 }
+
+
+.CLITTILU{
+  font-size: clamp(2rem, 2vw, 1.5rem);
+  margin-bottom: 10px;
+
+}
+
 
 .agrgaragpuntos{
   background-color: rgba(255, 0, 255, 0);
@@ -83,24 +99,24 @@ gap: 10px;
   padding: 10px;
   width: 80%;
   font-size: clamp(1.5rem, 2vw, 1.5rem);
+  border: solid 2px var(--color-cuarto);
   box-shadow: -2px 7px 10px var(--color-primario);
 }
 .btnagrgar{
-  background: var(--color-secundario);
-  border: 2px solid #999;
+  background: var(--color-primario);
+  border: 2px solid #000000;
   border-radius: 8px;
   padding: 6px 12px;
   font-size: 15px;
   color: #000000;
   cursor: pointer;
-  box-shadow:
-    inset 3px 3px 5px var(--color-secundario),   /* sombra clara arriba izquierda */
-    inset -3px -3px 5px var(--color-primario); /* sombra oscura abajo derecha */
+  
   transition: box-shadow 0.2s ease;
   user-select: none; 
 }
 .premios{
-  background-color: rgba(65, 105, 225, 0);
+  background-color: var(--color-quinto);
+  border-radius: 50px 50px 0px 0px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -111,7 +127,7 @@ gap: 10px;
   font-size: clamp(1.55rem, 2vw, 1.5rem);
 }
 .premioslist{
-  background-color: var(--color-primario);
+  background-color: var(--color-quinto);
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -122,7 +138,7 @@ overflow-x: auto;
   color: var(--color-primario);
 }
 .ptmio{
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-secundario);
   width: 100%;
   color: var(--color-primario);
   display: flex;
@@ -154,15 +170,24 @@ text-align: center;
 margin-top: 550px;
 }
 .btscaneartor{
-  background-color: #ffffff;
+background-color: var(--color-terseros);
   border: none;
 margin-top: 15px;
 font-size: clamp(1.3rem, 2vw, 1.5rem);
-color: slategrey;
+color: var(--color-sexyo);
+cursor: pointer;
 }
 .tulodescnar{
-  background-color: rgba(153, 205, 50, 0);
-  color: var(--color-primario);
+ 
+  color: var(--color-secundario);
   font-size: clamp(1.5rem, 2vw, 1.5rem);
   margin-bottom: 10px;
+}
+.instruciones{
+  width: 100%;
+  padding: 20px;
+}
+.instrucionef{
+  color: #000;
+  width: 100%;
 }
