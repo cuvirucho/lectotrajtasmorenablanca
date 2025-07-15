@@ -184,7 +184,6 @@ const [premiosDisponibles, setPremiosDisponibles] = useState([]);
                 placeholder="Puntos a agregar"
               />
               <button className='btnagrgar' onClick={sumarPuntos}>Agregar</button>
-              {mensaje && <p style={{ marginTop: 100 }}>{mensaje}</p>}
             </section>
 
             <section className='premios'>
